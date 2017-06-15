@@ -1,0 +1,123 @@
+.btn
+  display inline-block
+  font-size 18px
+  letter-spacing .25px
+  padding 16px 30px 14px
+  border-radius 30px
+  text-decoration none
+  position relative
+  transition background .15s linear, color .15s linear
+
+  &:active
+    top 1px
+
+  &.violet
+    background $violet
+    color $white
+
+    &:hover
+      background $violet-dark
+
+    &:active
+      background $violet-darker
+
+  &.book
+    padding 16px 30px 14px 42px
+    &:before
+      content ''
+      display inline-block
+      vertical-align middle
+      sprite($s-book)
+      transform translate(-12px, -1px)
+
+  &.default
+    font-size 18px
+    font-weight 500
+    padding 16px 32px 14px
+
+  &.white
+    background $white
+
+    &:hover
+      background rgba(0,0,0,.15)
+      color $white
+
+    &:active
+      background rgba(0,0,0,.3)
+      color $white
+
+
+.link
+  color $violet
+  text-decoration none
+  transition color .2s
+
+  &:hover
+    color $red
+
+.element
+  opacity 0
+  transform translate3d(0,100px,0)
+  transition all .4s
+
+  &.-active
+    opacity 1
+    transform translate3d(0,0,0)
+
+.buttons
+  position fixed
+  z-index 1
+  top 20px
+  right 20px
+
+  .btn-rounded
+    margin-bottom 18px
+
+.btn-rounded
+  display block
+  background $white
+  width 65px
+  height 65px
+  border-radius 50%
+  box-shadow 0 3px 5px rgba(0,0,0,.3)
+  text-align center
+  line-height 72px
+  text-decoration none
+  font-size 22px
+  font-family 'Helvetica Rounded'
+  position relative
+  top 0
+
+  &:active
+    top 1px
+
+  &.-blue
+    background $violet
+    color $white
+    transition background .2s
+
+    &:hover
+      background #4437eb
+
+    &:active
+      background #2e23be
+
+  img
+    max-width 35px
+    margin-top 20px
+
+@media (max-width 1600px)
+  .buttons
+    display none
+
+@media (max-width 1000px)
+  .btn
+    padding 13px 24px 12px 32px
+    font-size 16px
+
+    &.book:before
+      transform translate(-10px, -2px)
+
+  .element
+    opacity 1
+    transform translate3d(0,0,0)
