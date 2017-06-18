@@ -1,556 +1,117 @@
-.header-description
-  width 100%
-  max-width 780px
-  margin 0 auto
-  clearfix()
+.section
+  padding 44px 0 10px
 
-  &.left-image
-    padding-top 32px
-    margin-bottom -38px
+.section-head
+  text-align center
+  margin-bottom 30px
 
-  &.right
-    padding-left 68px
-    transform translate(-20px, 0)
+.section-headline
+  font 600 40px/44px 'PT Sans Narrow'
 
-    .content
-      width 400px
-      padding-right 60px
-      box-sizing border-box
-      float left
+  &.black
+    color $black
 
-    .description
-      float right
-      width 378px
+  &.white
+    color $white
 
-  &.left
-    transform translate(-20px, 0)
+  &.violet
+    color $violet
 
-    .content
-      width 430px
-      padding-left 40px
-      box-sizing border-box
-      float right
-      transform translate(60px, 0)
-
-    .description,
-    .image
-      float left
-      width 350px
-
-    .image
-      img
-        width calc(100% + 100px)
-        margin-left -86px
-        margin-top -92px
-
-    &.small
-      padding-top 28px
-
-      .description,
-      .image
-        width 360px
-
-      .content
-        width 420px
-        padding-left 0
-        transform translate(92px, 0)
-
-      .image
-        img
-          width calc(100% + 26px)
-          margin-left -18px
-          margin-top -52px
-
-  &.center
-    position relative
-    margin-top 32px
-    padding-bottom 18px
-
-    .content
-      width 410px
-      text-align center
-      margin 0 auto
-
-    .img-left,
-    .img-right
-      position absolute
-      width 260px
-      top 4px
-
-      img
-        width 100%
-
-    .img-left
-      left -130px
-
-    .img-right
-      right -130px
+.section-description
+  font-size 20px
+  letter-spacing -.5px
+  line-height 20px
+  margin 20px 0 -12px
 
 
-  .content
-    .supheadline
-      color $violet
-      font-size 20px
-      line-height 40px
-      margin-bottom 18px
-
-    .headline
-      font-family 'Helvetica Rounded'
-      font-size 30px
-      line-height 40px
-
-      &.big
-        font-size 50px
-        padding-bottom 18px
-
-    .subheadline
-      font-size 21px
-      letter-spacing -.25px
-      font-family 'Helvetica Rounded'
-      text-transform uppercase
-      margin-bottom 14px
-
-      .underline
-        position relative
-        display inline-block
-
-        b
-          position relative
-          z-index 1
-
-        &:before
-          content ''
-          display block
-          position absolute
-          z-index 0
-          bottom 11px
-          width 100%
-          height 6px
-
-        &.rose:before
-          background $rose
-
-        &.yellow:before
-          background $yellow
-
-        &.blue:before
-          background $blue
-
-  .text
-    font-size 18px
-    line-height 30px
-    font-weight 300
-
-    .presaved
-      width 242px
-      margin-top 20px
-
-    .shield
-      display inline-block
-      width 149px
-      margin-top 24px
-
-    .btn
-      margin-top 25px
-
-  .format-list
-    margin-top 3px
-    margin-bottom 23px
-
-    span
-      display inline-block
-      margin-right 5px
-      padding 6px 0
-      width 54px
-      height 31px
-      box-sizing border-box
-      border-radius 16px
-      font-family 'Helvetica Rounded'
-      font-size 12px
-      line-height 22px
-      color $white
-      text-align center
-
-      &:last-child
-        margin-right 0
-
-      &.yellow
-        background $yellow
-
-      &.red
-        background $red
-
-      &.blue
-        background $blue
-
-      &.rose
-        background $rose
-
-      &.green
-        background $green
-
-.image-left
-  position relative
-
-  &:after
-    content ''
-    display block
-    position absolute
-    right -140px
-    top -90px
-    background url('../images/content/diamond2.png')
-    width 277px
-    height 230px
-    background-size 277px 230px
-    background-position 0 0
-
-
-  &:before
-    content ''
-    display block
-    position absolute
-    left 0
-    top 24px
-    background url('../images/content/img.png')
-    width 133px
-    height 228px
-    background-size 133px 228px
-    background-position 0 0
-
-
-.icons-list
-  position relative
+.section-statistic
   text-align center
   font-size 0
-  width 100%
-  max-width 820px
-  padding-left 0
-  box-sizing border-box
-  margin 110px auto 0
+  margin 0 0 60px
 
   li
     display inline-block
-    width 20%
-    box-sizing border-box
-    padding 18px
-    position relative
+    vertical-align top
+    width 33.3%
 
-    &:after
-      content ''
-      display block
-      position absolute
-      z-index 0
-      width calc(100% - 36px)
-      height calc(100% - 36px)
-      top 18px
-      left 18px
-      background #eee
-      border-radius 50%
+    span
+      font 600 94px 'PT Sans Narrow'
+      color $violet
 
-    img
-      width 100%
+      i
+        font-style normal
+        font-size 26px
+        line-height 22px
+        padding-left 6px
+
+    p
+      width 220px
+      font-size 20px
+      margin 0 auto
+      line-height 24px
+
+.section-partners
+  text-align center
+  margin 0 -40px
+
+  li
+    display inline-block
+    vertical-align top
+    margin 0 40px
+
+    .section-partners-image
+      height 120px
+      margin-bottom 12px
       position relative
-      z-index 1
-
-  .notice
-    width auto
-    position absolute
-    top 0
-    right -14px
-    transform translate(100%, 0)
-    font-family 'Passing Notes'
-    font-size 18px
-    color $grey
-
-    &:after
-      display none
-
-    &.left
-      right auto
-      left -30px
-      transform translate(-100%, 0)
-
-      &:before
-        transform rotate(90deg)
-        left auto
-        right 0
-
-    &.third
-      top 278px
-
-    &.fifth
-      top 610px
-
-    &.sixth
-      top 768px
-
-    &.seventh
-      top 938px
-
-    &:before
-      content ''
-      display block
-      position absolute
-      bottom -66px
-      left 15px
-      sprite($s-round)
-
-.section
-  padding-bottom 100px
-
-
-@media (max-width 1300px)
-  .icons-list .notice
-    display none !important
-
-@media (max-width 1170px)
-  .image-left:after
-    display none
-
-@media (max-width 1100px)
-  .image-left
-    &:before,
-    &:after
-      display none
-
-@media (max-width 1000px)
-  .section
-    padding-bottom 50px
-
-  .header-description.right
-    padding-left 0
-    transform translate(0, 0)
-
-    .content,
-    .description
-      padding-left 0
-      padding-right 0
-      width 100%
-      float none
-      text-align center
-
-  .header-description.left
-    transform translate(0, 0)
-    .content
-      width 55%
-      padding-left 0
-      transform translate(0, 0)
-
-    .image
-      width 45%
-      img
-        width 100%
-        height auto
-        margin-top -10px
-        margin-left -40px
-
-
-  .header-description
-    &.left-image
-      padding-bottom 32px
-      margin-bottom 0
-
-    &.center
-      margin-top 44px
-      padding-bottom 36px
-
-      .content
-        width 440px
-        transform translate(5px, 0)
-
-      .img-left,
-      .img-right
-        top -12px
-
-        img
-          height auto
-
-      .img-left
-        left -215px
-
-      .img-right
-        right -215px
-
-    .content
-      .headline.big
-        padding-bottom 10px
-
-      .headline.big
-        font-size 40px
-
-      .subheadline
-        font-size 16px
-        margin-bottom 6px
-        letter-spacing .25px
-
-      .text
-        font-size 16px
-        line-height 28px
-
-        .presaved
-          display block
-          margin 16px auto
-
-  .header-description .content .subheadline .underline:before, footer.footer .subheadline .underline:before
-    display none
-
-  .icons-list
-    width 660px
-    margin-top 52px
-
-    li
-      width 25%
 
       &:after
-        display none
+        content ''
+        width 1px
+        height 100%
+        display inline-block
+        vertical-align middle
 
       img
-        height auto
+        max-height 100%
+        display inline-block
+        vertical-align middle
 
-  .header-description.left.small
-    max-width 670px
-    padding-bottom 28px
+.section-info
+  background $grey
+  padding 44px 0 60px
 
-    .content
-      width 60%
-      padding-top 16px
-      padding-left 36px
-      transform translate(0, 0)
+  .section-head
+    margin-bottom 46px
 
-    .image
-      width 40%
+  .section-headline
+    text-align center
 
-      img
-        width 100%
-        height auto
-        margin-top 2px
-        margin-left -15px
 
-    .text .btn
-      margin-top 16px
+.contacts
+  padding-top 50px
 
-  .header-description
-    max-width 620px
-
-    .format-list
-      margin-top 29px
-      margin-bottom 33px
-
-@media (max-width 720px)
-
-  .header h1.headline.-active .name:after
-    transform translate(0, 0) scale(0.32) !important
-
-  .section
-    padding-bottom 44px
-
-  .header-description
-
-    &.left.small
-      padding-top 4px
-      padding-bottom 16px
-
-      .image,
-      .content
-        width 100%
-        padding-left 0
-        padding-right 0
-
-      .content
-        padding-top 34px
-
-        .text .btn
-          margin-top 28px
-
-      .image
-        text-align center
-
-        img
-          max-width 264px
-          margin-left 0
-
-    &.center
-      margin-top 20px
-      padding-bottom 14px
-
-      .content
-        padding-top 198px
-        width 100%
-        transform translate(0, 0)
-
-      .img-right,
-      .img-left
-        width 176px
-        left 50%
-        right auto
-        margin-left -88px
-
-      .img-left
-        transform translate(-56px, 0)
-
-      .img-right
-        transform translate(56px, 0)
-
-    .content
-      .supheadline
-        margin-bottom 18px
-
-      .headline
-        font-size 26px
-        line-height 34px
-
-      .subheadline
-        letter-spacing 0
-
-    .format-list
-      margin-top 18px
-      margin-bottom 24px
-
-      span
-        width 48px
-        margin-right 4px
-
-    .content
-
-      .headline.big
-        font-size 30px
-        padding-bottom 15px
-
-      .text
-        font-size 15px
-        line-height 26px
-
-    &.left
-      .content
-        width 100%
-
-      .image
-        width 100%
-
-    &.left-image
-      padding-top 0
-      padding-bottom 10px
-
-      .image
-        text-align center
-
-        img
-          max-width 340px
-          margin 0
-
-      .content
-        text-align center
-        padding-top 34px
-
-  .icons-list
+  #map
     width 100%
-    max-width 380px
-    margin 34px auto 0
+    height 600px
 
-    li
-      width 33.33%
-      padding 10px
+  .base-col
+    position relative
+    z-index 1
 
-  .header-description .content .subheadline, footer.footer .subheadline
-    font-size: 14px;
-    margin-bottom: 6px;
+  .contacts-text
+    width 585px
+    height 600px
+    padding 45px 50px
+    box-sizing border-box
+    background rgba(255,255,255,.8)
+    position absolute
+    top 0
+    right 0
+    font-size 18px
+    line-height 26px
+
+    .section-headline
+      padding-bottom 24px
+
+    p
+      padding-bottom 24px

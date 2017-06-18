@@ -14,6 +14,7 @@
     "bower_components"
   ],
   "dependencies": {
-    "jquery": "~2.2.4"
+    "jquery": "~2.2.4",
+    "slick-carousel": "https://github.com/kenwheeler/slick.git#^1.6.0"
   }
 }

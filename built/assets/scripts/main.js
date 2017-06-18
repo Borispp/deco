@@ -1,37 +1,27 @@
-"use strict";
+'use strict';
 
 $(document).ready(function () {
 
-  var $element = $(".element");
-  var elementsPositions = [];
-
-  $element.each(function (i, el) {
-    elementsPositions.push([$(el).offset().top, el]);
+  $('.main-slider').slick({
+    fade: true,
+    dots: true
   });
 
-  var checkElements = function checkElements() {
-
-    elementsPositions.forEach(function (item, i) {
-      if (document.body.clientHeight - item[0] + window.pageYOffset > 100) {
-        $(item[1]).addClass("-active");
-      }
-    });
-  };
-
-  $(window).scroll(function () {
-    checkElements();
-  });
-  checkElements();
-
-  var $names = $('.name');
-  $('header.header .headline .name').on('click', function (e) {
-    e.preventDefault();
-
-    $(this).addClass('-hide');
-    if ($(this).next('.name').length) {
-      $(this).next().removeClass('-hide');
-    } else {
-      $names.first().removeClass('-hide');
-    }
+  $('.list-slider').slick({
+    fade: true
   });
 });
+
+// Google map
+function initMap() {
+  var deco = { lat: 47.026442, lng: 28.830943 };
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 18,
+    center: deco,
+    scrollwheel: false
+  });
+  var marker = new google.maps.Marker({
+    position: deco,
+    map: map
+  });
+}

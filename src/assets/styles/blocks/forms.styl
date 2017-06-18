@@ -1,0 +1,54 @@
+.form-wide
+  width 100%
+  display block
+  padding 44px 0 60px
+  margin 24px 0 12px
+
+  .section-headline
+    text-align center
+    margin-bottom 30px
+
+  fieldset
+    font-size 0
+    margin 0 -15px
+
+  .form-wide-item
+    display inline-block
+    width 33.3%
+    padding 0 15px
+    box-sizing border-box
+
+    input,
+    button
+      width 100%
+
+  &.violet
+    background url('../images/content/violet-bg.jpg')
+    background-size cover
+
+  &.grey
+    background $grey
+
+.input
+  background #fff
+  border-radius 4px
+  padding 9px 16px
+  font-size 16px
+  border none
+  box-sizing border-box
+  border 2px solid transparent
+  transition border .2s
+  resize none
+
+  +placeholder()
+    color $black
+
+  &:focus
+    border 2px solid $orange
+
+  &.grey
+    padding 10px 17px
+    border 1px solid $grey
+
+    &:focus
+      border 1px solid $violet
