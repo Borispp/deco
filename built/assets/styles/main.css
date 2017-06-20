@@ -427,7 +427,7 @@ input[type='submit'] {
     position: relative;
   }
   .contacts #map {
-    display: none;
+    height: 250px;
   }
 }
 @media (max-width: 600px) {
@@ -1008,7 +1008,7 @@ input[type='submit'] {
     width: 100%;
     padding: 12px 18px;
     border-radius: 0;
-    height: 100%;
+    height: calc(100% + 50px);
   }
   .popup-head {
     font-size: 15px;
