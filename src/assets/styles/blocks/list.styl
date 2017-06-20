@@ -1,6 +1,6 @@
 .list-items
   font-size 0
-  margin-bottom 20px
+  margin 0 -5px 20px
 
   &.within-buttons
     .list-description
@@ -70,6 +70,7 @@
       display inline-block
       vertical-align middle
       padding-left 16px
+      width calc(100% - 120px)
 
     i
       display inline-block
@@ -97,10 +98,11 @@
   font-size 0
   text-align center
   padding-top 10px
+  margin 0 -20px
 
   li
     display inline-block
-    margin 0 24px
+    margin 0 20px
     overflow hidden
     border-radius 6px
     border 6px solid $violet
@@ -253,3 +255,94 @@
     img
       height 100%
       display inline-block
+
+  .slick-prev
+    left 20px
+
+  .slick-next
+    right 20px
+
+@media (max-width 1100px)
+  .list-items
+    .list-image
+      height 240px
+
+  .list-images
+    margin 0 -10px
+
+    li
+      width calc(25% - 32px)
+      margin 0 10px
+      img
+        width 100%
+
+@media (max-width 1000px)
+
+  .list-items
+    .list-image
+      height 200px
+
+@media (max-width 800px)
+  .list-items .list-image
+    height 160px
+
+@media (max-width 720px)
+  .list-items
+    margin-bottom 10px
+
+    .list-item
+      font-size 15px
+      margin-bottom 10px
+      width 50%
+
+    .list-button
+      margin 10px 0
+
+    .list-main-button
+      margin-top 10px
+
+    &.within-buttons .list-description
+      min-height auto
+
+  .list-icons
+    li
+      font-size 16px
+      line-height 25px
+      width 100%
+
+  .list-images
+    margin-bottom -20px
+
+    li
+      width calc(50% - 40px)
+      margin-bottom 20px
+
+  .list-questions
+    .list-questions-question
+      font-size 16px
+
+  .list-reviews
+    margin-bottom -20px
+
+    > li
+      width 100%
+      margin-bottom 20px
+
+@media (max-width 550px)
+  .list-items
+    margin-bottom 10px
+
+    .list-item
+      font-size 15px
+      margin-bottom 10px
+      width 100%
+
+    .list-image
+      height 220px
+
+  .list-slider-full
+    .slick-prev
+      left 10px
+
+    .slick-next
+      right 10px
