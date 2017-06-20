@@ -17,7 +17,8 @@ $(document).ready(function () {
 // Google map
 function initMap() {
   var deco = { lat: 47.026442, lng: 28.830943 };
-  var position = { lat: 47.026442, lng: 28.83243 };
+  var position = innerWidth > 720 ? { lat: 47.026442, lng: 28.83243 } : deco;
+
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 18,
     center: position,
