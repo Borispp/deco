@@ -24,6 +24,7 @@
   .main-headline,
   .main-phones,
   .main-order-call,
+  .main-order-call-mobile,
   .main-language
     display inline-block
     vertical-align middle
@@ -32,6 +33,13 @@
   .main-order-call,
   .main-language
     margin-left 12px
+
+  .main-order-call-mobile
+    display none
+    padding 10px
+    svg
+      width 20px
+      padding 0
 
   .main-logo
     sprite($s-logo)
@@ -47,6 +55,10 @@
     line-height 26px
     letter-spacing -1px
 
+    a
+      color #000
+      text-decoration none
+
   .main-language
     font 600 16px 'PT Sans Narrow'
     letter-spacing -.5px
@@ -60,7 +72,9 @@
 
 .main-slider
   width 100%
-  height calc(100vh - 99px)
+  height calc(100vh - 200px)
+  min-height 700px
+  max-height 1000px
   position relative
   margin-bottom 0 !important
 
@@ -100,7 +114,7 @@
   .main-info-headline
     font 600 54px 'PT Sans Narrow'
     letter-spacing -.25px
-    line-height 72px
+    line-height 70px
     margin-bottom 20px
 
     .main-info-price
@@ -113,3 +127,105 @@
   .main-info-description
     font-size 24px
     margin-bottom 24px
+
+@media (max-width 1000px)
+  .main-slider
+    min-height 550px
+    max-height 900px
+
+  .main-info
+    width calc(100% - 30px)
+    max-width 485px
+    top 160px
+    padding 24px 40px
+
+    .main-info-headline
+      font 600 44px 'PT Sans Narrow'
+      letter-spacing -.25px
+      line-height 54px
+      margin-bottom 18px
+
+      .main-info-price
+        font-size 80px
+        top -6px
+
+    .main-info-description
+      font-size 20px
+      margin-bottom 18px
+
+@media (max-width 800px)
+  .main-slider
+    min-height 550px
+    max-height 700px
+
+@media (max-width 720px)
+  .main-header
+    padding 0
+
+    .main-logo
+      margin-right 0
+      transform scale(0.7)
+
+    .main-headline
+      display none
+
+    .main-phones
+      font-size 20px
+      line-height 22px
+
+@media (max-width 550px)
+  .main-info
+    padding 12px 18px
+
+    .main-info-headline
+      font-size 36px
+      line-height 44px
+      margin-bottom 8px
+
+      .main-info-price
+        font-size 60px
+        top -2px
+
+  .main-info
+    top 110px
+
+  .main-slider
+    min-height 480px
+
+@media (max-width 450px)
+
+  .main-header
+    .main-order-call, .main-language, .main-order-call-mobile
+      margin-left 8px
+
+    .main-phones
+      margin-left 0
+
+    .main-header-left
+      margin-left -18px
+      margin-right -20px
+
+    .main-logo
+      margin-right 0
+      transform scale(0.6)
+
+    .main-order-call
+      display none
+
+    .main-order-call-mobile
+      display inline-block
+
+  .main-info
+    .main-info-headline
+      font-size: 32px;
+      line-height: 42px;
+      margin-bottom: 8px;
+
+    .main-info-description
+      font-size 18px
+      margin-bottom 12px
+      line-height 24px
+
+  .main-slider
+    min-height 420px
+    max-height 460px

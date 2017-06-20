@@ -12,3 +12,16 @@ footer.footer
       display inline-block
       margin-left 12px
       sprite($s-fb)
+
+@media (max-width 800px)
+  footer.footer .footer-copyrighth
+    width 600px
+
+@media (max-width 550px)
+  footer.footer
+    .footer-copyrighth,
+    .footer-social
+      float none
+
+    .footer-social
+      text-align center

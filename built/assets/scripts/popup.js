@@ -11,7 +11,6 @@ $('.js-open-popup').on('click', function (e) {
   var $this = $(this);
   var popupId = $this.attr('href');
   var popupIdElement = $(popupId);
-  console.log(popupIdElement);
   if (popupId === '#order-call') setHeadline($this.data('headline'));
 
   openPopup.call(this, popupIdElement);
@@ -35,7 +34,6 @@ var closePopup = function closePopup() {
 };
 
 var setHeadline = function setHeadline(headline) {
-  console.log(headline);
   $orderCallHeadline.text(headline);
 };
 
